@@ -4,7 +4,7 @@ about: "You can use this template to contribute to the database of facts! Facts 
   use only line, be funny and original \U0001F609"
 title: Fact suggestion
 labels: ''
-assignees: diksown
+assignees: ''
 
 ---
 

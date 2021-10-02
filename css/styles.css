@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans");
+
+:root {
+  --bg-color: rgb(34, 34, 34);
+  --font-color: rgb(238, 238, 238);
+}
+
+body {
+  font-size: 30px;
+  font-family: "PT Serif", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--bg-color);
+}
+
+.wrapper-body {
+  padding: 15px;
+}
+
+/*
+.fact-wrapper {
+}
+
+.fact {
+}
+*/
+
+.author {
+  font-family: "Noto Sans", sans-serif;
+  opacity: 0.4;
+  font-size: 18px;
+}

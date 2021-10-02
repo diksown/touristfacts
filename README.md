@@ -1,2 +1,3 @@
 # touristfacts
-some &lt;facts> about the most prominent competitive of all time. shouldn't be taken too seriously.
+
+Some 'facts' about the arguably most prominent competitive of all time. Shouldn't be taken too seriously. Or should it?

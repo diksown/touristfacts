@@ -1,0 +1,42 @@
+Tourist can speak in C++.
+Once, tourist sent all his solutions at once and took the first place immediately. 30 seconds later, his solutions were judged.
+Tourist solved a NP-Complete problem once. In constant time.
+For tourist, dark mode or light mode doesn't matter, as he usually codes with his eyes closed.
+Tourist once solved an n ≤ 10^5 problem using only boolean data types.
+Tourist receives "Accepted" verdicts in heuristic competitions.
+When tourist hosts a contest, there aren't any queue delays, because he judges all submissions himself by looking at the source code.
+Tourist once enumerated all prime numbers. Backwards.
+Tourist's randomized solutions don't have a probability of fail.
+When tourist create a interactive problem, he doesn't write a interactor program. He interacts with the contestants code himself.
+Tourist runs C++ code on interactive shells.
+There aren't prime numbers. Just numbers that tourist hasn't bothered to factor yet.
+When tourist hashes strings, there isn't a risk of collision.
+When tourist wants to make juice, he takes the fruits of segment trees.
+"segment trees" were actually called "whole trees" before tourist smashed them.
+The baby and the giant on the baby-step giant-step algorithm are actually running from tourist.
+Tourist can overflow bigint data types.
+If the server takes too long to judge a tourist solution, the server receives a TLE verdict.
+Tourist solved a problem using brainfuck once — In a Kotlin Heroes contest.
+Tourist doesn't use sort. He just shakes the array with his own hands until all elements get in the right place.
+Tourist always climb up positions in the scoreboard, even if he is already the first — and the scoreboard is frozen.
+When tourist codes a persistant data structure, it LITERALLY can go back on time. 
+Boolean data types can take more than 2 different values if tourist wants them to.
+All algorithms can be done in at most O(N). If they aren't yet, it's just because tourist didn't bother to optimize them.
+Tourist choose his nick because he used to travel to a LOT of cities. And he was always able to choose the optimal path between them.
+Tourist doesn't think that naming variables are hard.
+Tourist compile code by shrinking it with his bare hands.
+Tourist doesn't use doubles. He uses triples, a float-type with no loss of precision.
+Tourist can make floats sink by looking at them.
+When born, instead of crying, tourist spelled source code in Delphi. The doctor's response was "Accepted"
+Tourist can count to 2^64. On his fingers.
+Tourist has binary trees, fenwick trees and link cut trees growing on his garden.
+Tourist doesn't need a stop condition on his recursive algorithms. They stop when he wants them to.
+Tourist's phone number, when converted to binary, is actually a compiled C++ code of an FFT implementation.
+Tourist can do both range queries and range updates in O(1)
+Tourist can code a segment tree in HTML.
+Tourist eat meals in hash tables.
+Tourist knows the Lowest Common Ancestor of any pair of people.
+Tourist doesn't know the "Heavy-Light Decomposition". He calls it "Light-Lighter Decomposition".
+Tourist knows the Nim value of any chess position.
+Tourist can hear programming languages. From computers. Turned off.
+Bugs are afraid of tourist.

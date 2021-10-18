@@ -22,7 +22,8 @@ function goToFact(factNumber, facts) {
 function getFactUrl() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const factNumber = urlParams.get("fact");
+  const factNumberStr = urlParams.get("fact");
+  const factNumber = parseInt(factNumberStr);
   if (isNaN(factNumber) || factNumber < 0) {
     return null;
   } else return factNumber;
@@ -35,6 +36,7 @@ function setFactUrl(factNumber) {
 function toNextFact(facts) {
   let current = getFactUrl();
   let next = (current + 1) % facts.length;
+  console.log(current, next, facts.length);
   goToFact(next, facts);
 }
 

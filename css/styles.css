@@ -60,6 +60,7 @@ i {
 
 .navbar-right > * {
   cursor: pointer;
+  margin: 0px 10px;
 }
 
 .fact {

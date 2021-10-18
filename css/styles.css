@@ -58,6 +58,10 @@ i {
   align-items: flex-end;
 }
 
+.navbar-right > * {
+  cursor: pointer;
+}
+
 .fact {
   margin: 10px 0;
 }

@@ -45,7 +45,7 @@ function toPreviousFact(facts) {
 }
 
 function toRandomFact(facts) {
-  let random = facts.length;
+  let random = Math.floor(Math.random() * facts.length);
   goToFact(random, facts);
 }
 
@@ -56,6 +56,12 @@ async function renderPage() {
     factNumber = Math.floor(Math.random() * facts.length);
   }
   goToFact(factNumber, facts);
+  let prev = document.getElementById("prev");
+  let next = document.getElementById("next");
+  let rand = document.getElementById("rand");
+  prev.onclick = () => toPreviousFact(facts);
+  next.onclick = () => toNextFact(facts);
+  rand.onclick = () => toRandomFact(facts);
 }
 
 renderPage();

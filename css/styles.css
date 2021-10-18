@@ -24,6 +24,12 @@ body {
   background-color: var(--bg-color);
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
 .wrapper-body {
   padding: 20px;
 }
@@ -47,12 +53,22 @@ i {
   justify-content: space-between;
 }
 
+.navbar-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fact {
+  margin: 10px 0;
+}
+
 .description {
   font-family: "Noto Sans", sans-serif;
   color: var(--link-color);
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
 .suggestion {

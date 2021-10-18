@@ -2,8 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans");
 
 :root {
-  --bg-color: rgb(34, 34, 34);
-  --font-color: rgb(238, 238, 238);
+  --bg-color: #222222;
+  --font-color: #eeeeee;
+  --link-color: #747474;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -17,19 +25,42 @@ body {
 }
 
 .wrapper-body {
-  padding: 15px;
+  padding: 20px;
 }
 
-/*
 .fact-wrapper {
+  max-width: 1000px;
 }
 
-.fact {
+/* idk why, but font-awesome is in italic bydefault */
+i {
+  font-style: normal;
 }
-*/
 
-.author {
+.material-icons {
+  font-size: inherit;
+}
+
+.navbar {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
   font-family: "Noto Sans", sans-serif;
-  color: rgb(116, 116, 116);
-  font-size: 18px;
+  color: var(--link-color);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
 }

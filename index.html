@@ -5,16 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourist Facts</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css"
+      integrity="sha512-lCU0XyQA8yobR7ychVxEOU5rcxs0+aYh/9gNDLaybsgW9hdrtqczjfKVNIS5doY0Y5627/+3UVuoGv7p8QsUFw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="wrapper-body">
       <div class="fact-wrapper">
-        <div class="fact">
+        <div class="navbar">
+          <div class="navbar-left">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="navbar-right">
+            <span class="material-icons">arrow_back</span>
+            <span class="material-icons">casino</span>
+            <span class="material-icons">arrow_forward</span>
+          </div>
+        </div>
+        <div class="fact" id="fact-id">
           If the server takes too long to judge a tourist solution, the server
           receives a TLE verdict.
         </div>
-        <div class="author">Suggested by @diksown</div>
+        <div class="description">
+          <div class="author">
+            By <a href="https://github.com/diksown" id="author-id">@diksown</a>
+          </div>
+          <div class="suggestion">
+            <div class="material-icons">lightbulb</div>
+            Suggest
+          </div>
+        </div>
       </div>
     </div>
   </body>

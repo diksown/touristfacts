@@ -1,0 +1,18 @@
+# Overview of what we need to do:
+
+# 1 - When a issue is labeled as 'suggestion', trigger the workflow.
+# 2 - Retrieve the github username of the author of the issue
+# 3 - Retrieve the issue's facts
+# 4 - Parse the facts and put in a nice json format
+# 5 - Read facts database
+# 6 - Add the new fact(s) to facts database
+# 7 - Overwrite facts database
+# 8 - Add, commit, push
+# 9 - :)
+
+# Each of these steps introduce a new challenge.
+# 1 needs a bit of search to know the syntax.
+# 2~3 can be solved with env vars, I think.
+# 4~7 are pretty much just plain programming,
+# but... node or python? I wouldn't like to deal with npm for now.
+# 8... authorizing things is tricky...

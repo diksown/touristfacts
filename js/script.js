@@ -36,7 +36,6 @@ function setFactUrl(factNumber) {
 function toNextFact(facts) {
   let current = getFactUrl();
   let next = (current + 1) % facts.length;
-  console.log(current, next, facts.length);
   goToFact(next, facts);
 }
 

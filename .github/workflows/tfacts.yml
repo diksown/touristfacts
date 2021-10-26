@@ -24,7 +24,7 @@ on:
       - labeled
 jobs:
   add-new-fact:
-    if: github.event.label.name == 'suggestion'
+    if: github.event.label.name == 'accepted'
     runs-on: ubuntu-latest
     env:
       USER: ${{github.event.issue.user.login}}

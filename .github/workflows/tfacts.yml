@@ -16,3 +16,20 @@
 # 4~7 are pretty much just plain programming,
 # but... node or python? I wouldn't like to deal with npm for now.
 # 8... authorizing things is tricky...
+
+name: Add new fact
+on:
+  issues:
+    types:
+      - labeled
+jobs:
+  add-new-fact:
+    if: github.event.label.name == 'suggestion'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add new fact
+        # uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ls

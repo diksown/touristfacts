@@ -29,8 +29,9 @@ jobs:
     steps:
       - name: Add new fact
         # uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        run: ls
         with:
           issue-number: ${{ github.event.issue.number }}
-          run: ls
           body: |
             ls
+            saf

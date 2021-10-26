@@ -25,7 +25,7 @@ on:
 jobs:
   add-new-fact:
     if: github.event.label.name == 'suggestion'
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     env:
       USER: ${{github.event.issue.user.login}}
       BODY: ${{github.event.issue.body}}
@@ -45,7 +45,7 @@ jobs:
       - name: Run main function
         run: python facts/main.py >> $GITHUB_ENV
         # if you want to add smth, do
-          # echo "R=$G" >> $GITHUB_ENV
+        # echo "R=$G" >> $GITHUB_ENV
 
       - uses: stefanzweifel/git-auto-commit-action@v4
       - name: Close Issue
@@ -54,4 +54,3 @@ jobs:
           comment: |
             Thanks for the contribution!
             The facts added were ${{env.ADDED_FACTS}}
-

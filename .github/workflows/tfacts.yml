@@ -43,7 +43,7 @@ jobs:
 
       # Function that will modify files
       - name: Run main function
-        run: python facts/main.py >> $GITHUB_ENV
+        run: python facts/add_fact.py >> $GITHUB_ENV
         # if you want to add smth, do
         # echo "R=$G" >> $GITHUB_ENV
 

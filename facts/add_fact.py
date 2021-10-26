@@ -20,8 +20,8 @@ def add_new_fact(fact, username):
 
 
 def process_facts(facts_raw, username):
-	fact_raw_processed = fact_raw.replace('\r', '')
-	fact_list = fact_raw_processed.split('\n')
+	facts_raw_processed = facts_raw.replace('\r', '')
+	fact_list = facts_raw_processed.split('\n')
 	id_list = []
 	for fact in fact_list:
 		if not fact.isspace(): 

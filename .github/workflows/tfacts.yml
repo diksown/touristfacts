@@ -25,7 +25,35 @@ on:
 jobs:
   add-new-fact:
     if: github.event.label.name == 'suggestion'
-    runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
+    env:
+      USER: ${{github.event.issue.user.login}}
+      BODY: ${{github.event.issue.body}}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Add new fact
-        run: ls
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Shows issue info
+      - name: Shows issue
+        run: |
+          echo $USER
+          echo $BODY
+          
+          
+
+      # Function that will modify files
+      - name: Run main function
+        run: python facts/main.py >> $GITHUB_ENV
+        # if you want to add smth, do
+          # echo "R=$G" >> $GITHUB_ENV
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1.0.3
+        with:
+          comment: |
+            Thanks for the contribution!
+            The facts added were ${{env.ADDED_FACTS}}
+

@@ -1,6 +1,9 @@
 {
   "facts": [
-    { "content": "Tourist can speak in C++.", "author": "diksown" },
+    {
+      "content": "Tourist can speak in C++.",
+      "author": "diksown"
+    },
     {
       "content": "Once, tourist sent all his solutions at once and took the first place immediately. 30 seconds later, his solutions were judged.",
       "author": "diksown"
@@ -14,7 +17,7 @@
       "author": "diksown"
     },
     {
-      "content": "Tourist once solved an n ≤ 10^5 problem using only boolean data types.",
+      "content": "Tourist once solved an n \u2264 10^5 problem using only boolean data types.",
       "author": "diksown"
     },
     {
@@ -70,7 +73,7 @@
       "author": "diksown"
     },
     {
-      "content": "Tourist solved a problem using brainfuck once — In a Kotlin Heroes contest.",
+      "content": "Tourist solved a problem using brainfuck once \u2014 In a Kotlin Heroes contest.",
       "author": "diksown"
     },
     {
@@ -78,7 +81,7 @@
       "author": "diksown"
     },
     {
-      "content": "Tourist always climb up positions in the scoreboard, even if he is already the first — and the scoreboard is frozen.",
+      "content": "Tourist always climb up positions in the scoreboard, even if he is already the first \u2014 and the scoreboard is frozen.",
       "author": "diksown"
     },
     {
@@ -141,7 +144,10 @@
       "content": "Tourist can code a segment tree in HTML.",
       "author": "diksown"
     },
-    { "content": "Tourist eat meals in hash tables.", "author": "diksown" },
+    {
+      "content": "Tourist eat meals in hash tables.",
+      "author": "diksown"
+    },
     {
       "content": "Tourist knows the Lowest Common Ancestor of any pair of people.",
       "author": "diksown"
@@ -158,6 +164,9 @@
       "content": "Tourist can hear programming languages. From computers. Turned off.",
       "author": "diksown"
     },
-    { "content": "Bugs are afraid of tourist.", "author": "diksown" }
+    {
+      "content": "Bugs are afraid of tourist.",
+      "author": "diksown"
+    }
   ]
 }

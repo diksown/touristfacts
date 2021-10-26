@@ -2,8 +2,11 @@ import os
 import json
 from pathlib import Path
 
-issue_creator = os.environ['USER']
-issue_body = os.environ['BODY']
+try:
+	issue_creator = os.environ['USER']
+	issue_body = os.environ['BODY']
+except: # useful for local running...
+	pass
 
 def add_new_fact(fact, username):
 	# improve this location later
@@ -33,7 +36,7 @@ def pretty_print_ids(id_list):
 	to_show = ""
 	for fact_id in id_list:
 		to_show += "#" + str(fact_id) + ",\\ "
-	to_show = to_show[:-2]
+	to_show = to_show[:-3]
 	return to_show
 
 added_ids = process_facts(issue_body, issue_creator)

@@ -47,7 +47,9 @@ jobs:
         # if you want to add smth, do
         # echo "R=$G" >> $GITHUB_ENV
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Auto commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+
       - name: Close Issue
         uses: peter-evans/close-issue@v1.0.3
         with:

@@ -7,3 +7,5 @@ Heavily inspired by things like [Chuck Norris facts](https://chucknorrisfacts.ne
 ## Contributing
 
 Want to suggest a new fact? Just open an issue using the [fact suggestion template](https://github.com/diksown/touristfacts/issues/new?assignees=&labels=&template=fact-suggestion.md&title=Fact+suggestion)! If it is well humoured, I'll add a `accepted` label to it and it will automatically be added to the site, giving a link to your GitHub profile as credit :)
+
+If want to contribute in another way, you can [open a blank issue](https://github.com/diksown/touristfacts/issues/new) or fork this project and make a pull request. 

@@ -65,4 +65,4 @@ jobs:
           comment: |
             Thanks for the contribution!
             The facts added were ${{env.ADDED_FACTS}}.
-            You can see them [here.](https://touristfacts.dikson.xyz/?fact=${{env.FIRST_FACT}})
+            You will be able to see them soon from [here.](https://touristfacts.dikson.xyz/?fact=${{env.FIRST_FACT}})

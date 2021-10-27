@@ -5,20 +5,6 @@ async function loadFacts() {
   return facts;
 }
 
-function displayFact(fact) {
-  let { content, author } = fact;
-  let contentElement = document.getElementById("fact-id");
-  contentElement.innerHTML = content; // TODO: parse to valid HTML later...
-  let authorElement = document.getElementById("author-id");
-  authorElement.innerHTML = "@" + author; // TODO: put links to github
-}
-
-function goToFact(factNumber, facts) {
-  setFactUrl(factNumber);
-  let fact = facts[factNumber];
-  displayFact(fact);
-}
-
 function getFactUrl() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -29,8 +15,30 @@ function getFactUrl() {
   } else return factNumber;
 }
 
-function setFactUrl(factNumber) {
-  history.pushState({}, null, "?fact=" + factNumber.toString());
+function setFactUrl(factNumber = -1) {
+  if (factNumber === -1) {
+    history.pushState({}, null, "./");
+  } else {
+    history.pushState({}, null, "?fact=" + factNumber.toString());
+  }
+}
+
+function displayFact(fact) {
+  let { content, author } = fact;
+  let contentElement = document.getElementById("fact-id");
+  contentElement.innerHTML = content; // TODO: parse to valid HTML later...
+  let authorElement = document.getElementById("author-id");
+  authorElement.innerHTML = "@" + author; // TODO: put links to github
+}
+
+function goToFact(factNumber, facts, setUrl = true) {
+  if (setUrl) {
+    setFactUrl(factNumber);
+  } else {
+    setFactUrl();
+  }
+  let fact = facts[factNumber];
+  displayFact(fact);
 }
 
 function toNextFact(facts) {
@@ -47,7 +55,7 @@ function toPreviousFact(facts) {
 
 function toRandomFact(facts) {
   let random = Math.floor(Math.random() * facts.length);
-  goToFact(random, facts);
+  goToFact(random, facts, false);
 }
 
 async function renderPage() {
@@ -56,7 +64,7 @@ async function renderPage() {
   if (factNumber === null || factNumber >= facts) {
     factNumber = Math.floor(Math.random() * facts.length);
   }
-  goToFact(factNumber, facts);
+  goToFact(factNumber, facts, false);
   let prev = document.getElementById("prev");
   let next = document.getElementById("next");
   let rand = document.getElementById("rand");

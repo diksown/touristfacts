@@ -51,6 +51,7 @@ i {
   font-size: 40px;
   display: flex;
   justify-content: space-between;
+  user-select: none;
 }
 
 .navbar-right {

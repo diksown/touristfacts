@@ -35,10 +35,10 @@ body {
 }
 
 .fact-wrapper {
-  max-width: 1000px;
+  width: min(90vw, 1000px);
 }
 
-/* idk why, but font-awesome is in italic bydefault */
+/* idk why, but font-awesome is in italic by default */
 i {
   font-style: normal;
 }

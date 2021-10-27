@@ -1,30 +1,32 @@
 import os
 import json
 from pathlib import Path
+from datetime import datetime
 
 issue_creator = os.environ['ISSUE_USER']
 issue_body = os.environ['ISSUE_BODY']
+time_added = datetime.now().isoformat()
 
-
-def add_new_fact(fact, username):
+def add_new_fact(fact, username, timestamp):
 	facts_path = Path(__file__).with_name('facts.json')
 	with open(facts_path) as f:
 		facts_dict = json.load(f)
 	with open(facts_path, 'w') as f:
 		facts_dict['facts'].append({
 			'content': fact,
-			'author': username
+			'author': username,
+			'timestamp': timestamp
 		})
 		json.dump(facts_dict, f, indent=2)
 	return len(facts_dict['facts']) # id of added fact
 
 
-def process_facts(facts_raw, username):
+def process_facts(facts_raw, username, timestamp):
 	fact_list = facts_raw.split('\n')
 	fact_list = [fact.strip() for fact in fact_list if fact.strip()]
 	id_list = []
 	for fact in fact_list:
-		fact_id = add_new_fact(fact, username)
+		fact_id = add_new_fact(fact, username, timestamp)
 		id_list.append(fact_id)
 	return id_list
 
@@ -35,6 +37,6 @@ def pretty_print_ids(id_list):
 	to_show = to_show[:-2]
 	return to_show
 
-added_ids = process_facts(issue_body, issue_creator)
+added_ids = process_facts(issue_body, issue_creator, time_added)
 print("ADDED_FACTS="+pretty_print_ids(added_ids))
 print("FIRST_FACT="+str(added_ids[0]))

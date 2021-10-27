@@ -18,7 +18,7 @@ def add_new_fact(fact, username, timestamp):
 			'timestamp': timestamp
 		})
 		json.dump(facts_dict, f, indent=2)
-	return len(facts_dict['facts']) # id of added fact
+	return len(facts_dict['facts']) - 1 # id of added fact
 
 
 def process_facts(facts_raw, username, timestamp):

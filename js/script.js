@@ -1,3 +1,5 @@
+let current_fact_number;
+
 async function loadFacts() {
   let response = await fetch("../facts/facts.json");
   let factsJson = await response.json();
@@ -38,17 +40,18 @@ function goToFact(factNumber, facts, setUrl = true) {
     setFactUrl();
   }
   let fact = facts[factNumber];
+  current_fact_number = factNumber;
   displayFact(fact);
 }
 
 function toNextFact(facts) {
-  let current = getFactUrl();
+  let current = current_fact_number;
   let next = (current + 1) % facts.length;
   goToFact(next, facts);
 }
 
 function toPreviousFact(facts) {
-  let current = getFactUrl();
+  let current = current_fact_number;
   let previous = (facts.length + current - 1) % facts.length;
   goToFact(previous, facts);
 }
@@ -61,10 +64,11 @@ function toRandomFact(facts) {
 async function renderPage() {
   let facts = await loadFacts();
   let factNumber = getFactUrl();
-  if (factNumber === null || factNumber >= facts) {
-    factNumber = Math.floor(Math.random() * facts.length);
+  if (factNumber === null || factNumber >= facts.length) {
+    toRandomFact(facts);
+  } else {
+    goToFact(factNumber, facts);
   }
-  goToFact(factNumber, facts, false);
   let prev = document.getElementById("prev");
   let next = document.getElementById("next");
   let rand = document.getElementById("rand");

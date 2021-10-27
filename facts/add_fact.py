@@ -5,7 +5,6 @@ from pathlib import Path
 issue_creator = os.environ['ISSUE_USER']
 issue_body = os.environ['ISSUE_BODY']
 
-print(issue_body.encode().hex())
 
 def add_new_fact(fact, username):
 	facts_path = Path(__file__).with_name('facts.json')
@@ -25,8 +24,7 @@ def process_facts(facts_raw, username):
 	fact_list = facts_raw_processed.split('\n')
 	id_list = []
 	for fact in fact_list:
-		if not fact.isspace():
-			print("Adding fact: " + fact.encode().hex())
+		if not fact.isspace() and fact:
 			fact_id = add_new_fact(fact, username)
 			id_list.append(fact_id)
 	return id_list

@@ -42,7 +42,7 @@ jobs:
 
       # Function that will modify files
       - name: Run main function
-        run: python facts/add_fact.py #>> $GITHUB_ENV # Useful for setting env vars. Kinda dirty.
+        run: python facts/add_fact.py >> $GITHUB_ENV # Useful for setting env vars. Kinda dirty.
 
       # Add and commit stuff
       - name: Auto commit changes

@@ -27,8 +27,8 @@ jobs:
     if: github.event.label.name == 'accepted'
     runs-on: ubuntu-latest
     env:
-      USER: ${{github.event.issue.user.login}}
-      BODY: ${{github.event.issue.body}}
+      ISSUE_USER: ${{github.event.issue.user.login}}
+      ISSUE_BODY: ${{github.event.issue.body}}
 
     steps:
       # Downloads the repository, so I can update the facts database
@@ -37,18 +37,18 @@ jobs:
       # Shows issue info - Useful for debugging
       - name: Shows issue
         run: |
-          echo $USER
-          echo $BODY
+          echo $ISSUE_USER
+          echo $ISSUE_BODY
 
       # Function that will modify files
       - name: Run main function
-        run: python facts/add_fact.py >> $GITHUB_ENV # Useful for setting env vars. Kinda dirty.
+        run: python facts/add_fact.py #>> $GITHUB_ENV # Useful for setting env vars. Kinda dirty.
 
       # Add and commit stuff
       - name: Auto commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "added new fact, suggested by ${{env.USER}}"
+          commit_message: "added new fact, suggested by ${{env.ISSUE_USER}}"
 
       # Comment and close original issue
       - name: Close Issue

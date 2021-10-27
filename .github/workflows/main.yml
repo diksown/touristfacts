@@ -27,8 +27,8 @@ jobs:
     if: github.event.label.name == 'accepted'
     runs-on: ubuntu-latest
     env:
-      ISSUE_USER: ${{github.event.issue.user.login}}
-      ISSUE_BODY: ${{github.event.issue.body}}
+      ISSUE_USER: ${{ github.event.issue.user.login }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
 
     steps:
       # Downloads the repository, so I can update the facts database
@@ -50,10 +50,19 @@ jobs:
         with:
           commit_message: "add new fact. thanks, @${{env.ISSUE_USER}}!"
 
+      # Add reactions to issue
+      - name: Add reaction to original issue
+        uses: aidan-mundy/react-to-issue@v1.0.2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          # +1, -1, laugh, confused, heart, hooray, rocket, eyes
+          reactions: heart, hooray
+
       # Comment and close original issue
-      - name: Close Issue
+      - name: Close original issue
         uses: peter-evans/close-issue@v1.0.3
         with:
           comment: |
             Thanks for the contribution!
-            The facts added were ${{env.ADDED_FACTS}}
+            The facts added were ${{env.ADDED_FACTS}}.
+            You can see them [here.](https://touristfacts.dikson.xyz/?fact=${{{env.FIRST_FACT}}})

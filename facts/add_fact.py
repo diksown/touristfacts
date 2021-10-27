@@ -20,13 +20,11 @@ def add_new_fact(fact, username):
 
 
 def process_facts(facts_raw, username):
-	facts_raw_processed = facts_raw.replace('\r', '')
-	fact_list = facts_raw_processed.split('\n')
+	fact_list = facts_raw.split('\n')
+	fact_list = [fact.strip() for fact in fact_list if fact.strip()]
 	id_list = []
 	for fact in fact_list:
-		if not fact.isspace() and fact:
-			fact_id = add_new_fact(fact, username)
-			id_list.append(fact_id)
+		fact_id = add_new_fact(fact, username)
 	return id_list
 
 def pretty_print_ids(id_list):
@@ -38,3 +36,4 @@ def pretty_print_ids(id_list):
 
 added_ids = process_facts(issue_body, issue_creator)
 print("ADDED_FACTS="+pretty_print_ids(added_ids))
+print("FIRST_FACT="+str(added_ids[0]))

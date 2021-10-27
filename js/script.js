@@ -28,9 +28,11 @@ function setFactUrl(factNumber = -1) {
 function displayFact(fact) {
   let { content, author } = fact;
   let contentElement = document.getElementById("fact-id");
-  contentElement.innerHTML = content; // TODO: parse to valid HTML later...
+  contentElement.textContent = content;
   let authorElement = document.getElementById("author-id");
-  authorElement.innerHTML = "@" + author; // TODO: put links to github
+  authorElement.textContent = "@" + author;
+  let github_profile_url = "https://github.com/" + author;
+  authorElement.setAttribute("href", github_profile_url);
 }
 
 function goToFact(factNumber, facts, setUrl = true) {

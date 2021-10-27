@@ -255,6 +255,22 @@
     {
       "content": "this\\nis\\na\\nmultiline\\nfact",
       "author": "diksown"
+    },
+    {
+      "content": "fact1",
+      "author": "diksown"
+    },
+    {
+      "content": "fact 2",
+      "author": "diksown"
+    },
+    {
+      "content": "fact 3",
+      "author": "diksown"
+    },
+    {
+      "content": "\ud83d\ude09\ud83d\ude09\ud83d\ude09",
+      "author": "diksown"
     }
   ]
 }

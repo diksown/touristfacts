@@ -3,7 +3,7 @@ name: Fact suggestion
 about: "You can use this template to contribute to the database of facts! Facts should
   be one line each - be funny and original! \U0001F609"
 title: Fact suggestion
-labels: ''
+labels: fact suggestion
 assignees: ''
 
 ---

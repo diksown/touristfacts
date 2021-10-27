@@ -9,7 +9,6 @@ except: # useful for local running...
 	pass
 
 def add_new_fact(fact, username):
-	# improve this location later
 	facts_path = Path(__file__).with_name('facts.json')
 	with open(facts_path) as f:
 		facts_dict = json.load(f)

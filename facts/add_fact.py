@@ -25,6 +25,7 @@ def process_facts(facts_raw, username):
 	id_list = []
 	for fact in fact_list:
 		fact_id = add_new_fact(fact, username)
+		id_list.append(fact_id)
 	return id_list
 
 def pretty_print_ids(id_list):

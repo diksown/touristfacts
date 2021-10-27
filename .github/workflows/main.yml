@@ -48,7 +48,7 @@ jobs:
       - name: Auto commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "added new fact, suggested by ${{env.ISSUE_USER}}"
+          commit_message: "add new fact. thanks, @${{env.ISSUE_USER}}!"
 
       # Comment and close original issue
       - name: Close Issue

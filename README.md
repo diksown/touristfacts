@@ -1,4 +1,4 @@
-# [**Tourist Facts**](https://touristfacts.dikson.xyz)
+# [**Tourist Facts**](https://touristfacts.dikson.xyz) <img src="/img/tf.png" height="30px">
 
 Some _facts_ about the arguably most prominent competitive of all time. It shouldn't be taken too seriously. Or should they?
 

@@ -195,6 +195,21 @@
     {
       "content": "\ud83d\ude02",
       "author": "diksown"
+    },
+    {
+      "content": "Tourist can do both range queries and range updates in O(1).",
+      "author": "diksown",
+      "timestamp": "2021-10-27T21:49:53.467560"
+    },
+    {
+      "content": "Tourist can code a segment tree in HTML.",
+      "author": "diksown",
+      "timestamp": "2021-10-27T21:49:53.467560"
+    },
+    {
+      "content": "Tourist eat meals in hash tables.",
+      "author": "diksown",
+      "timestamp": "2021-10-27T21:49:53.467560"
     }
   ]
 }

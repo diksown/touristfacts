@@ -254,6 +254,16 @@
       "content": "When tourist takes educational rounds, the problemsetters learn from him.",
       "author": "bucketpotato01",
       "timestamp": "2021-10-28T11:25:26.991376"
+    },
+    {
+      "content": "Tourist doesn't need to binary search to find the optimal answer. He already knows where it is.",
+      "author": "Dragonado",
+      "timestamp": "2021-10-28T11:28:17.483095"
+    },
+    {
+      "content": "Tourist can do binary lifting in cyclic graphs.",
+      "author": "Dragonado",
+      "timestamp": "2021-10-28T11:28:17.483095"
     }
   ]
 }

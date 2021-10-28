@@ -32,6 +32,9 @@ body {
 
 .wrapper-body {
   padding: 20px;
+  position: absolute;
+  top: 50vh;
+  transform: translate(0, max(-50%, -50vh));
 }
 
 .fact-wrapper {

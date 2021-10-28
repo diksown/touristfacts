@@ -20,10 +20,17 @@ def add_new_fact(fact, username, timestamp):
 		json.dump(facts_dict, f, indent=2)
 	return len(facts_dict['facts']) - 1 # id of added fact
 
+def parse_fact(fact):
+	clean_fact = fact.strip()
+	if not clean_fact:
+		return None
+	if clean_fact[-1] != '.':
+		clean_fact += '.'
+	return clean_fact
 
 def process_facts(facts_raw, username, timestamp):
 	fact_list = facts_raw.split('\n')
-	fact_list = [fact.strip() for fact in fact_list if fact.strip()]
+	fact_list = [parse_fact(fact) for fact in fact_list if parse_fact(fact)]
 	id_list = []
 	for fact in fact_list:
 		fact_id = add_new_fact(fact, username, timestamp)

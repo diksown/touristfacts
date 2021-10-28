@@ -319,6 +319,11 @@
       "content": "Tourist can do binary search without sorting an array.",
       "author": "EnDeRGeaT",
       "timestamp": "2021-10-28T17:18:14.833889"
+    },
+    {
+      "content": "If Tourist loses something, he finds it in logarithmic time.",
+      "author": "EnDeRGeaT",
+      "timestamp": "2021-10-28T17:19:51.512042"
     }
   ]
 }

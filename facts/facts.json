@@ -214,6 +214,21 @@
       "content": "Tourist can sort an array in constant time",
       "author": "Divyanshu-1",
       "timestamp": "2021-10-28T02:59:19.414384"
+    },
+    {
+      "content": "Tourist can solve N<=1e5 problems in O(N^2)",
+      "author": "Malhe1ros",
+      "timestamp": "2021-10-28T03:07:22.307789"
+    },
+    {
+      "content": "Tourist doesn't read the statements, he looks at the sample test cases and instantly knows what to do",
+      "author": "Malhe1ros",
+      "timestamp": "2021-10-28T03:07:22.307789"
+    },
+    {
+      "content": "Tourist can use MO for online queries",
+      "author": "Malhe1ros",
+      "timestamp": "2021-10-28T03:07:22.307789"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # [**Tourist Facts**](https://touristfacts.dikson.xyz) <img src="/img/tf.png" height="30px">
 
-Some _facts_ about the arguably most prominent competitive of all time. It shouldn't be taken too seriously. Or should they?
+Some _facts_ about the arguably most prominent competitive of all time. It shouldn't be taken too seriously. Or should it?
 
 Heavily inspired by things like [Chuck Norris facts](https://chucknorrisfacts.net/top-100) and [Bruce Schneier facts](https://www.schneierfacts.com/).
 

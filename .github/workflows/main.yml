@@ -48,7 +48,7 @@ jobs:
       - name: Auto commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "add new fact. thanks, @${{env.ISSUE_USER}}!"
+          commit_message: "add new facts. thanks, @${{env.ISSUE_USER}}!"
 
       # Add reactions to issue
       - name: Add reaction to original issue

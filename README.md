@@ -2,7 +2,7 @@
 
 Some _facts_ about the arguably most prominent competitive of all time.
 
-Heavily inspired by things like [Chuck Norris facts](https://chucknorrisfacts.net/top-100) and [Bruce Schneier facts](https://www.schneierfacts.com/).
+Heavily inspired by things like [Chuck Norris facts](https://en.wikipedia.org/wiki/Chuck_Norris_facts) and [Bruce Schneier facts](https://www.schneierfacts.com/).
 
 ## Contributing
 

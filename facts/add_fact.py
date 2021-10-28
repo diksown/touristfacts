@@ -33,7 +33,7 @@ def process_facts(facts_raw, username, timestamp):
 def pretty_print_ids(id_list):
 	to_show = ""
 	for fact_id in id_list:
-		to_show += "#" + str(fact_id) + ", "
+		to_show += str(fact_id) + ", "
 	to_show = to_show[:-2]
 	return to_show
 

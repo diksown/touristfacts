@@ -294,6 +294,11 @@
       "content": "Authors panic about the correctness of their model solutions when tourist gets WA.",
       "author": "bitstack343",
       "timestamp": "2021-10-28T12:27:39.654465"
+    },
+    {
+      "content": "When tourist submits an incorrect solution, the problemsetters get WA.",
+      "author": "Lol-Key",
+      "timestamp": "2021-10-28T14:34:53.227725"
     }
   ]
 }

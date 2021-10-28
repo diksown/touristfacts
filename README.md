@@ -2,6 +2,9 @@
 
 Some _facts_ about the arguably most prominent competitive of all time.
 
+![image](https://user-images.githubusercontent.com/49994083/139259863-79d8b3ac-3cd3-46d5-ba6e-4a795070acdc.png)
+
+
 Heavily inspired by things like [Chuck Norris facts](https://en.wikipedia.org/wiki/Chuck_Norris_facts) and [Bruce Schneier facts](https://www.schneierfacts.com/).
 
 ## Contributing

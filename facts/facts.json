@@ -399,6 +399,11 @@
       "content": "They used to call him the traveling salesman. Now they just call him 'tourist'.",
       "author": "SecondThread",
       "timestamp": "2021-10-29T21:39:29.781891"
+    },
+     {
+      "content": "If the server takes too long to judge a tourist solution, the server receives a TLE verdict. Tourist can count to 2^64. On his fingers.",
+      "author": "SecondThread",
+      "timestamp": "2021-10-29T21:39:29.781891"
     }
   ]
 }

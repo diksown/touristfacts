@@ -409,6 +409,11 @@
       "content": "The time limit to a problem isn't the amount of time it takes Tourist's solution to run, its the time it takes for him to finish coding.",
       "author": "GabrielDWu",
       "timestamp": "2021-10-31T10:51:20.373793"
+    },
+    {
+      "content": "g++ -O4 sends your code to tourist for rewrite.",
+      "author": "jonathanirvings",
+      "timestamp": "2022-03-11T12:16:56.802698"
     }
   ]
 }

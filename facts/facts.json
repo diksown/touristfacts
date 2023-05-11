@@ -414,6 +414,11 @@
       "content": "g++ -O4 sends your code to tourist for rewrite.",
       "author": "jonathanirvings",
       "timestamp": "2022-03-11T12:16:56.802698"
+    },
+    {
+      "content": "When tourist was a contestant at IOI he didn't have an \"I want more food\" sign, but an \"I want more problems\" sign.",
+      "author": "LaviniaTornaghi",
+      "timestamp": "2023-05-11T05:29:33.084356"
     }
   ]
 }

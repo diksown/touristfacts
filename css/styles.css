@@ -41,6 +41,7 @@ body {
 /* idk why, but font-awesome is in italic by default */
 i {
   font-style: normal;
+  color: var(--font-color);
 }
 
 .material-icons {
